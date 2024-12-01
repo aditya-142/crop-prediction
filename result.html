@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crop Recommendation</title>
+    <style>
+        /* Global Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Arial', sans-serif;
+        }
+        body {
+            background-color: #e0f7e9;
+            background-image: url('C:/Users/aditi/Desktop/Downloads/cropcrop.jpg'); /* Substitute with an actual URL of a subtle crop image */
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: #2e7d32;
+        }
+
+        /* Result Container */
+        .container {
+            padding: 40px 30px;
+            text-align: center;
+            background: rgba(255, 255, 255, 0.8); /* Semi-transparent background for readability */
+            border-radius: 12px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            width: 300px;
+        }
+
+        /* Header */
+        h2 {
+            font-size: 1.8em;
+            margin-bottom: 20px;
+            font-weight: 600;
+            color: #2e7d32;
+        }
+
+        /* Recommended Crop Text */
+        p {
+            font-size: 1.2em;
+            color: #4d774e;
+            margin-bottom: 20px;
+        }
+
+        /* Link for Another Prediction */
+        a {
+            text-decoration: none;
+            font-size: 1em;
+            color: #2e7d32;
+            font-weight: bold;
+            background-color: #66bb6a;
+            padding: 10px 15px;
+            border-radius: 8px;
+            transition: background-color 0.3s ease;
+        }
+        a:hover {
+            background-color: #43a047;
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Recommended Crop</h2>
+        <p>The recommended crop based on your inputs is: {{ crop }}</p>
+        <a href="/">Make Another Prediction</a>
+    </div>
+</body>
+</html>
